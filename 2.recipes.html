@@ -4,23 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <title>My Favorite Recipes</title>
+    <style>
+        .top { margin: -2.5em 0 1em 8em; }
+    </style>
 </head>
 <body>
-<h1>My Favorite Recipes</h1>
-<h3>List of Ingredients:</h3>
-<ul>
-    <li>Ingredient 1</li>
-    <li>Ingredient 2</li>
-    <li>Ingredient 3</li>
-</ul>
 
-<p>This is how you make recipe 1:</p>
+<header>
+    <h1>My Favorite Recipes</h1>
+    <nav>
+        <ul>
+            <li><a href="#tacos">Tacos</a></li>
+            <li><a href="#pizza">Pizza</a></li>
+            <li><a href="#potatoes">Potatoes</a></li>
+        </ul>
+    </nav>
+</header>
 
-<ol>
-    <li>First step</li>
-    <li>Second step</li>
-    <li>Third step</li>
-</ol>
+<main>
+    <article id="tacos">
+        <h2>Tacos</h2>
+        <nav class="top">
+            <a href="#">&para;</a>
+        </nav>
+        <img src="img/Tacos_al_pastor.jpg" width="300">
+        <details>
+            <summary>List of Ingredients:</summary>
+            <ul>
+                <li>Ingredient 1</li>
+                <li>Ingredient 2</li>
+                <li>Ingredient 3</li>
+            </ul>
+        </details>
+
+        <p>This is how you make recipe 1:</p>
+        <ol>
+            <li>First step</li>
+            <li>Second step</li>
+            <li>Third step</li>
+        </ol>
+    </article>
+
+    <article id="pizza">
+        <h2>Pizza</h2>
+        <nav class="top">
+            <a href="#">&para;</a>
+        </nav>
+
+        <figure>
+            <img src="img/Tacos_al_pastor.jpg" width="350">
+            <figcaption>This is Pizza!</figcaption>
+        </figure>
+
+        <h3>List of Ingredients:</h3>
+        <ul>
+            <li>Ingredient 1</li>
+            <li>Ingredient 2</li>
+            <li>Ingredient 3</li>
+        </ul>
+        <details>
+            <summary>This is how you make recipe 2:</summary>
+            <ol>
+                <li>First step</li>
+                <li>Second step</li>
+                <li>Third step</li>
+            </ol>
+        </details>
+    </article>
+
+    <article id="potatoes">
+        <h2>Potatoes</h2>
+        <nav class="top">
+            <a href="#">&para;</a>
+        </nav>
+        <img src="img/Tacos_al_pastor.jpg" width="200">
+        <h3>List of Ingredients:</h3>
+        <ul>
+            <li>Ingredient 1</li>
+            <li>Ingredient 2</li>
+            <li>Ingredient 3</li>
+        </ul>
+        <p>This is how you make recipe 3:</p>
+        <ol>
+            <li>First step</li>
+            <li>Second step</li>
+            <li>Third step</li>
+        </ol>
+    </article>
+</main>
+
+<footer>
+    <hr>
+    <p>&copy; 2017</p>
+</footer>
 
 </body>
 </html>
