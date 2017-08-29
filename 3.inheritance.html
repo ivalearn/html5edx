@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inheritance</title>
+    <style>
+        body { font-size: 16px; }
+        p {
+            font-family: monospace;  /* inherited by children of p */
+            padding: 40px;  /* not inherited */
+        }
+        q, span {
+            font-style: italic;
+            /**/ padding: inherit;/**/
+        }
+        .forest  { color: blueviolet !important; }
+        p.forest span       { color: green; }
+        p        span.tree  { color: blue;  }  /* <== wins */
+    </style>
+</head>
+<body>
+<p>This paragraph has children <span>spans</span> and <span>q</span>,
+   which, in turn, have their own child <span>spans</span>.
+   <q>With this structure, we can see how some CSS <span>rules</span>
+      are <span>applied across a <q>variety</q></span> of scopes.
+   </q>
+</p>
+<p class="forest">eula <span class="tree">arbol</span> plkplk</p>
+</body>
+</html>
