@@ -1,6 +1,9 @@
 li {
     margin-left: 20px;
     margin-bottom: 10px;
+    padding-left: 20px;
+    list-style: none;
+    background: url(my_triangle.png) no-repeat 1px center / .7em;
 }
 h1 {
     text-align: center;

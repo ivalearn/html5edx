@@ -1,8 +1,5 @@
 li {
     font-family: sans-serif;
-    /*list-style-type: lower-alpha;*/
-    /*list-style-type: square;*/
-    list-style-image: url("my_triangle.png");
 }
 h1 {
     font-family: fantasy;
